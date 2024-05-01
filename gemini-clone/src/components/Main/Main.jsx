@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import './main.css';
 import { assets } from '../../assets/assets';
 
 const Main = () => {
+    
     return (
         <div className='main'>
             <div className='nav'>
