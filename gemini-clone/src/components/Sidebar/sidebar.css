@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.sidebar{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    scroll-behavior: smooth;
+}
+
+.sidebar img{
+    width: 2.5rem;
+}
+
+.sidebar .menu{
+  display: block;
+  margin-left: 1em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+
+.sidebar .new-chat{
+    margin-top: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2em;
+    border-radius: 50px;
+    color: gray;
+    cursor: pointer;
+}
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    font: Outfit;
+}
+
+.sidebar .recent-title{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items: start;
+    gap :0.5em;
+    padding: 10px;
+    padding-right: 2.5em;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+.sidebar .recent-entry p{
+    padding-top: 0.5em;
+}
+
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
+.sidebar .bottom{
+  display: flex;
+  flex-direction: column;   
+}
+
+.sidebar .bottom-item{
+    padding-right: 0.5em;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+}
