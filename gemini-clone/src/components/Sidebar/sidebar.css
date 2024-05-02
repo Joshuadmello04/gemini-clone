@@ -7,6 +7,17 @@
     justify-content: space-between;
     background-color: #f0f4f9;
     scroll-behavior: smooth;
+    margin-right: 0.0625em;
+}
+
+.sidebar .extended-content {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; /* Add transition to opacity */
+}
+
+.sidebar .extended-content.hidden {
+    opacity: 0;
+    pointer-events: none; /* Hide and disable interactions for hidden content */
 }
 
 .sidebar img{
