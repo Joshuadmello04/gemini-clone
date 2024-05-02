@@ -7,7 +7,10 @@ const Sidebar = () => {
 
     const [extended, setExtended] = useState(false)
     const {onSent, prevPrompts, setRecentPrompt} = useContext(Context)
-
+    const loadPrompt = async (prompt) =>{
+        setRecentPrompt(prompt) 
+        await onSent(prompt)
+    }
     return (
         <div className='sidebar'>
             <div className='top'>
@@ -16,14 +19,13 @@ const Sidebar = () => {
                     <img src={assets.plus_icon} alt="" />
                     {extended ? <p>New Chat</p> : null}
                 </div>
-                {extended ?
-                    <div className='recent'>
-                        <p className='recent-title'>Recent</p>
-                                <div className='recent-entry'>
+                {extended 
+                    ? <div className='recent'>
+                        <p className='recent-title'>Recent</p> 
+                        <div className='recent-entry'>
                                     <img src={assets.message_icon} alt="" />
                                     <p>...</p>
                                 </div>
-                        
 
                     </div>
                     : null

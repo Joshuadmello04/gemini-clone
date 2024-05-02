@@ -1,8 +1,10 @@
 .main{
     flex:1;
+    flex-direction: column;
     min-height: 90vh;
     padding-bottom: 15vh;
     position: relative;
+    align-items: center;
 }
 .main .nav{
     display: flex;
@@ -24,6 +26,7 @@
 .main-container{
     max-width: 900px;
     margin: auto;    
+    align-items: center;
 }
 
 .main .greet{
@@ -31,6 +34,7 @@
   font-size: 56px;   
   color: #c4c7c5;
   font-weight: 500;
+  width: 100vw;
 }
 
 .main .greet span{
@@ -151,4 +155,32 @@
     font-size: 1em;
     font-weight: 500;
     line-height: 1.8;
+}
+
+@media (max-width:600px) {
+ .main-bottom input{
+    flex: none;
+    width: 150px;
+ }   
+ .main-bottom img{
+    width: 20px;
+ }
+ .search-box{
+    padding: 5px 10px;
+ }
+ .search-box div{
+    gap: 5px;
+ }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        margin: 0 20px; /* Add margin to the sides */
+    }
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        margin: 0 10px; /* Further reduce margin */
+    }
 }

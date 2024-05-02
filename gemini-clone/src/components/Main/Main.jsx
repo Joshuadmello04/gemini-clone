@@ -16,7 +16,6 @@ const Main = () => {
                 <img src={assets.user_icon} alt="" />
             </div>
             <div className='main-container'>
-
                 {!showResult ?
                     <>
                         <div className='greet'>
