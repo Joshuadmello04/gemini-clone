@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
 import './main.css';
 import { assets } from '../../assets/assets';
@@ -92,7 +91,7 @@ const Main = () => {
                     </div>
                 }
 
-                <div className='main-bottom'>
+                <div className='main-bottom overflow-clip'>
                     <div className='search-box'>
                         <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
                         <div className='try'>
