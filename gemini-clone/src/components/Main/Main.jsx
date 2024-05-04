@@ -91,19 +91,21 @@ const Main = () => {
                     </div>
                 }
 
-                <div className='main-bottom max-w-xl '>
+                <div className='main-bottom'>
                     <div className='search-box'>
-                        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
+                        <input className='w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-blue-500' onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
                         <div className='try'>
-                            <img src={assets.gallery_icon} />
-                            <img src={assets.mic_icon} />
-                            <img onClick={() => onSent()} src={assets.send_icon} />
+                            <img src={assets.gallery_icon} alt="gallery icon" />
+                            <img src={assets.mic_icon} alt="mic icon" />
+                            <img onClick={() => onSent()} src={assets.send_icon} alt="send icon" />
                         </div>
                     </div>
-                    <p className='bottom-info'>
+                    <p className='text-center bottom-info'>
                         Gemini may display inaccurate info, so double-check its responses. Made by Joshua
                     </p>
                 </div>
+
+
             </div>
         </div>
     );
