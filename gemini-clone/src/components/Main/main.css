@@ -46,6 +46,7 @@
     grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
     gap: 1em;
     padding: 20px;
+    margin-bottom: 0.5em;
 }
 
 .main .card{
@@ -83,7 +84,7 @@
   bottom: 0;
   max-width: 80vw;
   padding: 0px 20px;
-  margin: auto;
+  margin-bottom: 0em;
 }
 
 .search-box{
@@ -92,10 +93,11 @@
   justify-content: space-between;
   gap: 20px;
   background-color: #f0f4f9;
-  padding: 10px 20px;
+  padding: 1em;
   border-radius: 50px;
   height :4em;
-  min-width: 875px;
+  min-width: 320px;
+
 }
 
 .try{
@@ -105,7 +107,7 @@
 }
 .search-box img{
     width: 2.5em;
-    cursor: pointer;
+    margin-right: 0.5em;
 }
 
 .search-box input{
@@ -163,9 +165,6 @@
  .main-bottom img{
     width: 20px;
  }
- .search-box{
-    padding: 5px 10px;
- }
  .search-box div{
     gap: 5px;
  }
@@ -175,10 +174,17 @@
     .main-container {
         margin: 0 20px; /* Add margin to the sides */
     }
+    .search-box{
+        
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 496px) {
     .main-container {
         margin: 0 10px; /* Further reduce margin */
+        margin-bottom: 0.5em;
+    }
+    .search-box{
+        
     }
 }
