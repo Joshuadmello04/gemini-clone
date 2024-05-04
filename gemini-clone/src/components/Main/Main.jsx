@@ -91,17 +91,17 @@ const Main = () => {
                     </div>
                 }
 
-                <div className='main-bottom'>
+                <div className='main-bottom max-w-xl mx-auto'>
                     <div className='search-box'>
                         <input className='w-full px-4 py-2 rounded-lg border focus:outline-none focus:border-blue-500' onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
-                        <div className='try'>
-                            <img src={assets.gallery_icon} alt="gallery icon" />
-                            <img src={assets.mic_icon} alt="mic icon" />
-                            <img onClick={() => onSent()} src={assets.send_icon} alt="send icon" />
+                        <div className='try flex items-center'>
+                            <img className='mr-2' src={assets.gallery_icon} alt="gallery icon" />
+                            <img className='mr-2' src={assets.mic_icon} alt="mic icon" />
+                            <img onClick={() => onSent()} className='cursor-pointer' src={assets.send_icon} alt="send icon" />
                         </div>
                     </div>
                     <p className='text-center bottom-info'>
-                        Gemini may display inaccurate info, so double-check its responses. Made by Joshua
+                        Gemini may display inaccurate info, so double-check its responses. Made by <a href='https://www.linkedin.com/in/joshua-dmello-a48aa0264' className='text-blue-500 hover:underline'>Joshua</a>
                     </p>
                 </div>
 
