@@ -46,7 +46,7 @@
     grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
     gap: 1em;
     padding: 20px;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .main .card{
@@ -82,7 +82,7 @@
 .main-bottom{
   position: absolute;  
   bottom: 0;
-  max-width: 80vw;
+  max-width: 90vw;
   padding: 0px 20px;
   margin-bottom: 0em;
 }
@@ -96,8 +96,8 @@
   padding: 1em;
   border-radius: 50px;
   height :4em;
-  min-width: 320px;
-
+  min-width: 80%;
+  margin-top: 1em;
 }
 
 .try{
@@ -107,7 +107,8 @@
 }
 .search-box img{
     width: 2.5em;
-    margin-right: 0.5em;
+    padding-right: 0.5em;
+
 }
 
 .search-box input{
@@ -157,17 +158,13 @@
     line-height: 1.8;
 }
 
-@media (max-width:600px) {
- .main-bottom input{
-    flex: none;
-    width: 150px;
- }   
- .main-bottom img{
-    width: 20px;
- }
- .search-box div{
-    gap: 5px;
- }
+@media (max-width: 576px) {
+    .main-container {
+        margin: 0 10px; /* Further reduce margin */
+    }
+    .search-box {
+        min-width: 100%; /* Adjust min-width to occupy full width */
+    }
 }
 
 @media (max-width: 768px) {
@@ -175,7 +172,7 @@
         margin: 0 20px; /* Add margin to the sides */
     }
     .search-box{
-        
+        min-width: 28em;
     }
 }
 
@@ -186,5 +183,12 @@
     }
     .search-box{
         
+    }
+}
+
+@media (min-width: 891px)
+{
+    .search-box{
+        min-width: 50em;
     }
 }

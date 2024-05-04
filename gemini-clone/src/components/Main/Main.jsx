@@ -91,7 +91,7 @@ const Main = () => {
                     </div>
                 }
 
-                <div className='main-bottom overflow-clip'>
+                <div className='main-bottom max-w-xl '>
                     <div className='search-box'>
                         <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
                         <div className='try'>
@@ -101,7 +101,7 @@ const Main = () => {
                         </div>
                     </div>
                     <p className='bottom-info'>
-                        Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy & Gemini Apps
+                        Gemini may display inaccurate info, so double-check its responses. Made by Joshua
                     </p>
                 </div>
             </div>
